@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntertainmentHub", "EntertainmentHub\EntertainmentHub.csproj", "{6FC3482A-7EF4-485E-A7F4-1B4D47319CF7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntertainmentHub", "WebApplication1\EntertainmentHub.csproj", "{50A72731-6276-4F4D-B077-AE30884485D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6FC3482A-7EF4-485E-A7F4-1B4D47319CF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6FC3482A-7EF4-485E-A7F4-1B4D47319CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6FC3482A-7EF4-485E-A7F4-1B4D47319CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6FC3482A-7EF4-485E-A7F4-1B4D47319CF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50A72731-6276-4F4D-B077-AE30884485D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50A72731-6276-4F4D-B077-AE30884485D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50A72731-6276-4F4D-B077-AE30884485D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50A72731-6276-4F4D-B077-AE30884485D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {215B7982-468C-4A03-94F7-8F17AB8C4E31}
+		SolutionGuid = {1A539895-4823-463D-B4C9-EE9D5C77CAF0}
 	EndGlobalSection
 EndGlobal
