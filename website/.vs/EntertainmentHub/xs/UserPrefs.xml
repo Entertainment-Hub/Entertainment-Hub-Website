@@ -1,0 +1,46 @@
+﻿<Properties StartupConfiguration="{6FC3482A-7EF4-485E-A7F4-1B4D47319CF7}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EntertainmentHub/Pages/Index.cshtml">
+    <Files>
+      <File FileName="EntertainmentHub/Pages/About.cshtml" Line="7" Column="24" />
+      <File FileName="EntertainmentHub/Pages/Index.cshtml" Line="229" Column="19" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="EntertainmentHub" expanded="True">
+            <Node name="EntertainmentHub" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="Shared" expanded="True" />
+                <Node name="Index.cshtml" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True">
+                <Node name="PublishProfiles" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="images" expanded="True" />
+                <Node name="lib" expanded="True">
+                  <Node name="bootstrap" expanded="True">
+                    <Node name="dist" expanded="True">
+                      <Node name="js" expanded="True" />
+                    </Node>
+                  </Node>
+                  <Node name="jquery" expanded="True">
+                    <Node name="dist" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.EntertainmentHub PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
