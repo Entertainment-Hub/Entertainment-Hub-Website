@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVChyVUhPIEOw4q3oioXSHAAAAAACAAAAAAAQZgAAAAEAACAAAADGOY4iLVHCiwmNIEVQkdKRwioYa7xR/HSHiuABcLpgAQAAAAAOgAAAAAIAACAAAAAkA68zDFSrUx17aohcQVPNRKrmU1A57zerGoSVqE1DP4AAAAAxRBY1ibb3e3KwrTyZDPwAMxiJaGSTcr6dXhO8hlh/NSn5phQgNvSlscJP4LwomqEkjpby3o4A8ATsoByIXZ4Jf0XBF+4iKlop7m6V5bzOCXRH6+U/MvSW5rbGa8qhlmjL+5MJkhHnsEMt9oQbGcce2GIygT2xaUcmttwOpMVlUUAAAADW7tNvHADEOQ4gDoWPBxttUu747qHbk9/GXCA5jneSNZqrAsH/Eoc40r3QKd4G430gC8bI4MTNHh9Oc9Gvknsd</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <AzureDBConnectionStrings Include="Data Source=tcp:mediahub.database.windows.net,1433;Initial Catalog=User Account Information;User ID=Purple;Password=MicDoogle898" />
+    <AzureDBConnectionStrings Include="Data Source=tcp:mediahub.database.windows.net,1433;Initial Catalog=User Media Information;User ID=Purple;Password=MicDoogle898" />
+  </ItemGroup>
+</Project>

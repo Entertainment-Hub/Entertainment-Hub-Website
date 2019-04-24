@@ -1,0 +1,2 @@
+/Users/michael/Entertainment-Hub-Website/EntertainmentHub/obj/x86/Release/EntertainmentHub.csproj.CoreCompileInputs.cache
+/Users/michael/Entertainment-Hub-Website/EntertainmentHub/obj/x86/Release/EntertainmentHub.csprojAssemblyReference.cache
