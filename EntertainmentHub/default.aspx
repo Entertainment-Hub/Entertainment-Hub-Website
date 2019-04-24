@@ -43,10 +43,10 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login</a>
+                        <a class="nav-link" href="login.aspx">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="sign_up.html">Sign-Up</a>
+                        <a class="nav-link" href="sign_up.aspx">Sign-Up</a>
                     </li>
                 </ul>
             </div>

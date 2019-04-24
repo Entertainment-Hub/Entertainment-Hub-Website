@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{53A0F292-AD0D-4B33-84CF-F82858465BD4}|">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="EntertainmentHub" expanded="True">
+            <Node name="EntertainmentHub" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="default.aspx" selected="True" />
+              <Node name="Web.config" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.EntertainmentHub PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

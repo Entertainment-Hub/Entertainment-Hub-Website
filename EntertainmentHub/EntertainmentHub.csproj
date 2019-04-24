@@ -214,10 +214,14 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Scripts\js\index.js" />
+    <Content Include="Content\stylesheet.css" />
+    <Content Include="sign_up.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Scripts\js\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -258,6 +262,11 @@
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>
+    <MonoDevelop>
+      <Properties>
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
