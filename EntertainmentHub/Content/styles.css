@@ -1,0 +1,54 @@
+﻿/*
+Used for Randy's homepage index.html
+*/
+
+.column {
+    width: 50%;
+    text-align: center;
+    font-size: 1 rem;
+}
+
+.dropdown-menu {
+    text-align: center;
+}
+
+.carousel-desc {
+    display: none;
+    background: black;
+    position: absolute;
+    top: 60%;
+    height: 40%;
+    overflow-y: scroll;
+    padding-left: 10px;
+    color: white;
+}
+
+.carousel-item:hover .carousel-desc {
+    display: block;
+    animation: fade-in 1s;
+}
+
+.carousel-item:not(:hover) .carousel-desc.did-fade-in {
+    display: block;
+    animation: fade-out 1s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
