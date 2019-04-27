@@ -29,13 +29,15 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 bg_section_login">
-            <img class="logo" src="images/logo_desk.png" alt=""/>
+            <a href=" default.aspx">
+                <img class="logo" src="images/logo_desk.png" alt=""/>
+            </a>
           </div>
           <div class="col-12 m_bg_section_login">
-            <img src="images/logo_m.png" alt=""/>
+                <img src="images/logo_m.png" alt=""/>
           </div>
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 login_section">
-            <form class="needs-validation" novalidate>
+            <form class="needs-validation" novalidate ="novalidate"/>
               <h1>Log in</h1>
               <div class="error" id="user-error">
                 <img src="images/icon_error.svg" alt="error_icon"/>
@@ -46,10 +48,10 @@
                 Incorrect Password
               </div>
               <div class="form-row">
-                <input type="text" class="form-control"  id="username" aria-describedby="emailHelp" placeholder="Username" required>
+                <input type="text" class="form-control"  id="username" aria-describedby="emailHelp" placeholder="Username" required ="required">
               </div>
               <div class="form-row">
-                <input type="password" class="form-control" id="password" placeholder="Password" required>
+                <input type="password" class="form-control" id="password" placeholder="Password" required ="required">
               </div>
               <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="login_check">
