@@ -27,23 +27,29 @@ namespace EntertainmentHub
             bool isEmailSame = false;
             bool isPasswordSame = false;
 
+            //Building connection string
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            builder.DataSource = "mediahub.database.windows.net";
+            builder.UserID = "Purple";
+            builder.Password = "MicDoogle898";
+            builder.InitialCatalog = "User Account Information";
+
             //set up connection with database
-            SqlConnection user_account_connection = new SqlConnection("Server=tcp:mediahub.database.windows.net,1433;Initial Catalog=User Account Information;" +
-                "Persist Security Info=False;User ID={bh1531@nyu.edu};Password={Purple_potato42};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            using (SqlConnection user_account_connection = new SqlConnection(builder.ConnectionString))
             {
                 SqlCommand insert_account = new SqlCommand("EXEC dbo.CreateAccount @Username, @Password, @Email", user_account_connection);
-                insert_account.Parameters.AddWithValue("@Username",Username);
+                insert_account.Parameters.AddWithValue("@Username", Username.Text);
 
                 //boolean check
                 if (Password.Text == Re_password.Text)
                 {
-                    insert_account.Parameters.AddWithValue("@Password", Password);
+                    insert_account.Parameters.AddWithValue("@Password", Password.Text);
                     isPasswordSame = true;
-                    
+
                 }
-                if(Email.Text == Re_email.Text)
+                if (Email.Text == Re_email.Text)
                 {
-                    insert_account.Parameters.AddWithValue("@Email", Email);
+                    insert_account.Parameters.AddWithValue("@Email", Email.Text);
                     isEmailSame = true;
                 }
 
@@ -51,7 +57,7 @@ namespace EntertainmentHub
                 if (isEmailSame && isPasswordSame)
                 {
                     user_account_connection.Open();
-                    insert_account.BeginExecuteNonQuery();
+                    insert_account.ExecuteNonQuery();
                     user_account_connection.Close();
                 }
                 if (IsPostBack)
