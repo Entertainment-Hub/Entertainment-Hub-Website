@@ -1,31 +1,29 @@
-﻿<%@ Page Language="C#" %>
+﻿<%@ Page Language="C#" CodeBehind="~/Login.cs"%>
 
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0"/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
 
     <title>Log In</title>
 
     <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
 
 
     <!-- Custom styles for this template -->
     <!-- REMOVED <link href="css/shop-homepage.css" rel="stylesheet"> -->
-    <link href="content/stylesheet.css" rel="stylesheet">
-
-    <title></title>
+    <link href="content/stylesheet.css" rel="stylesheet"/>
 </head>
 
   <body>
 
-    <div class="container-fluid">
+    <div class="container-fluid"/>
       <div class="container">
         <div class="row">
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 bg_section_login">
@@ -37,7 +35,7 @@
                 <img src="images/logo_m.png" alt=""/>
           </div>
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 login_section">
-            <form class="needs-validation" novalidate ="novalidate"/>
+              <form id="form1" runat="server">
               <h1>Log in</h1>
               <div class="error" id="user-error">
                 <img src="images/icon_error.svg" alt="error_icon"/>
@@ -48,19 +46,19 @@
                 Incorrect Password
               </div>
               <div class="form-row">
-                <input type="text" class="form-control"  id="username" aria-describedby="emailHelp" placeholder="Username" required ="required">
+                <input type="text" class="form-control"  id="username" aria-describedby="emailHelp" placeholder="Username" required ="required"/>
               </div>
               <div class="form-row">
-                <input type="password" class="form-control" id="password" placeholder="Password" required ="required">
+                <input type="password" class="form-control" id="password" placeholder="Password" required ="required"/>
               </div>
               <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="login_check">
+                <input type="checkbox" class="form-check-input" id="login_check"/>
                 <label class="form-check-label" for="login_check">Stay signed in</label>
                 <a href="#">Forgot password?</a>
               </div>
-              <button type="submit" class="btn btn-primary">LOG IN</button>
-              <button type="submit" class="btn btn-outline-primary">SIGN UP</button>
-            </form>
+              <button type="submit" class="btn btn-primary" id="Login_button">LOG IN</button>
+              <button type="submit" class="btn btn-outline-primary" id="Signup">SIGN UP</button>
+              </form>
           </div>
       </div>
     </div>

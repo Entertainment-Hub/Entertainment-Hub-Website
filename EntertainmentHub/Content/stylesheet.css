@@ -186,6 +186,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .container .login_section form .form-check, .container .signup_section form .form-check {
   margin-top: 5px;
   line-height: 1.5;
+    top: -518px;
+    left: -123px;
 }
 @media only screen and (max-width: 575px) {
   /* line 110, ../sass/stylesheet.scss */

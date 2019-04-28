@@ -1,19 +1,19 @@
-﻿<%@ Page Language="C#" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="sign_up.aspx.cs" Inherits="EntertainmentHub.sign_up"%>
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0"> 
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head runat="server">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0"/> 
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
 
     <title>Sign Up</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
 
     <!-- Custom styles for this template -->
     <link href="content/stylesheet.css" rel="stylesheet" />
@@ -34,33 +34,34 @@
                 <img src="images/logo_m.png" alt=""/>
           </div>
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 signup_section">
-            <form class="needs-validation" novalidate ="novalidate">
+
+            <form  method="post" class="needs-validation" novalidate ="novalidate" runat="server">
               <h1>Sign Up</h1>
               <div class="error" id="mail-error">
                 <img src="images/icon_error.svg" alt="error_icon"/>
                 Incorrect Username
               </div>
               <div class="form-row">
-                <input type="text" class="form-control"  id="name" aria-describedby="emailHelp" placeholder="Name" required ="required" />
+                <asp:TextBox ID="Username" runat="server" CssClass="form-control" placeholder="Names"></asp:TextBox>
               </div>
               <div class="form-row">
-                <input type="email" class="form-control" id="mail" placeholder="Email" required ="required" />
+                <asp:TextBox ID="Email" runat="server" CssClass="form-control" placeholder="Email"></asp:TextBox>
               </div>
               <div class="form-row">
-                <input type="email" class="form-control" id="re_mail" placeholder="Re-enter email" required ="required" />
+                <asp:TextBox ID="Re_email" runat="server" CssClass="form-control" placeholder="Re-enter email"></asp:TextBox>
               </div>
               <div class="form-row">
-                <input type="password" class="form-control" id="password" placeholder="Password" required ="required" />
+                <asp:TextBox ID="Password" runat="server" CssClass="form-control" placeholder="Password" input="password"></asp:TextBox>
               </div>
               <div class="form-row">
-                <input type="password" class="form-control" id="re_password" placeholder="Re-enter password" required ="required" />
+                  <asp:TextBox ID="Re_password" runat="server" CssClass="form-control" placeholder="Re-enter password" input="password"></asp:TextBox>
               </div>
               <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="login_check" />
                 <label class="form-check-label" for="login_check">Recieve our weekly newsletter and other occasional updates</label>
               </div>
-              <button type="submit" class="btn btn-primary">SIGN UP</button>
-              <button type="submit" class="btn btn-outline-primary">LOG IN</button>
+              <asp:Button ID="Signup" runat="server" Text="SIGN UP" CssClass="btn btn-primary" Font-Names="Arial" OnClick="Signup_Click" />
+              <asp:Button ID="Login" runat="server" Text="LOGIN" CssClass="btn btn-outline-primary" Font-Names="Arial" OnClick="Login_Click" />
               <p id="privacyTerms" class="small_text">
                 By signing up, you agree to our <a href="#">terms of use</a>, <a href="#">privacy policy</a>, <a
                   href="#">and cookie policy</a>.
