@@ -46,10 +46,10 @@
                 Incorrect Password
               </div>
               <div class="form-row">
-                <input type="text" class="form-control"  id="username" aria-describedby="emailHelp" placeholder="Username" required ="required"/>
+                <asp:TextBox ID="Username" runat="server" CssClass="form-control" placeholder="Names" required></asp:TextBox>
               </div>
               <div class="form-row">
-                <input type="password" class="form-control" id="password" placeholder="Password" required ="required"/>
+                <asp:TextBox ID="password" runat="server" CssClass="form-control" Placeholder="Password" TextMode="Password" required></asp:TextBox>
               </div>
               <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="login_check"/>

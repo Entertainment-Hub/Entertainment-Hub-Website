@@ -26,48 +26,56 @@ namespace EntertainmentHub
             //used to check if email and password re-entered is same as original
             bool isEmailSame = false;
             bool isPasswordSame = false;
-
-            //Building connection string
-            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "mediahub.database.windows.net";
-            builder.UserID = "Purple";
-            builder.Password = "MicDoogle898";
-            builder.InitialCatalog = "User Account Information";
-
-            //set up connection with database
-            using (SqlConnection user_account_connection = new SqlConnection(builder.ConnectionString))
+            if (Page.IsValid)
             {
-                SqlCommand insert_account = new SqlCommand("EXEC dbo.CreateAccount @Username, @Password, @Email", user_account_connection);
-                insert_account.Parameters.AddWithValue("@Username", Username.Text);
+                //Building connection string
+                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+                builder.DataSource = "mediahub.database.windows.net";
+                builder.UserID = "Purple";
+                builder.Password = "MicDoogle898";
+                builder.InitialCatalog = "User Account Information";
 
-                //boolean check
-                if (Password.Text == Re_password.Text)
+                //set up connection with database
+                using (SqlConnection user_account_connection = new SqlConnection(builder.ConnectionString))
                 {
-                    insert_account.Parameters.AddWithValue("@Password", Password.Text);
-                    isPasswordSame = true;
+                    SqlCommand insert_account = new SqlCommand("EXEC dbo.CreateAccount @Username, @Password, @Email", user_account_connection);
+                    insert_account.Parameters.AddWithValue("@Username", Username.Text);
 
-                }
-                if (Email.Text == Re_email.Text)
-                {
-                    insert_account.Parameters.AddWithValue("@Email", Email.Text);
-                    isEmailSame = true;
-                }
+                    //boolean check
+                    if (Password.Text == Re_password.Text)
+                    {
+                        insert_account.Parameters.AddWithValue("@Password", Password.Text);
+                        isPasswordSame = true;
 
-                //if true, execute query
-                if (isEmailSame && isPasswordSame)
-                {
-                    user_account_connection.Open();
-                    insert_account.ExecuteNonQuery();
-                    user_account_connection.Close();
+                    }
+                    if (Email.Text == Re_email.Text)
+                    {
+                        insert_account.Parameters.AddWithValue("@Email", Email.Text);
+                        isEmailSame = true;
+                    }
+
+                    //if true, execute query
+                    if (isEmailSame && isPasswordSame)
+                    {
+                        user_account_connection.Open();
+                        insert_account.ExecuteNonQuery();
+                        user_account_connection.Close();
+                    }
+                    if (IsPostBack)
+                    {
+                        Username.Text = "";
+                        Password.Text = "";
+                        Email.Text = "";
+                        Re_email.Text = "";
+                        Re_password.Text = "";
+                    }
                 }
-                if (IsPostBack)
-                {
-                    Username.Text = "";
-                    Password.Text = "";
-                    Email.Text = "";
-                    Re_email.Text = "";
-                    Re_password.Text = "";
-                }
+                Label1.Text = "";
+            }
+
+            else
+            {
+                Label1.Text = "Please fill all fields";
             }
         }
     }

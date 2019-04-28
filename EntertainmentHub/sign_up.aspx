@@ -35,33 +35,34 @@
           </div>
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 signup_section">
 
-            <form  method="post" class="needs-validation" novalidate ="novalidate" runat="server">
+            <form  method="post" runat="server">
               <h1>Sign Up</h1>
               <div class="error" id="mail-error">
                 <img src="images/icon_error.svg" alt="error_icon"/>
                 Incorrect Username
               </div>
               <div class="form-row">
-                <asp:TextBox ID="Username" runat="server" CssClass="form-control" placeholder="Names"></asp:TextBox>
+                <asp:TextBox ID="Username" runat="server" CssClass="form-control" Placeholder="Names" required></asp:TextBox>
               </div>
               <div class="form-row">
-                <asp:TextBox ID="Email" runat="server" CssClass="form-control" placeholder="Email"></asp:TextBox>
+                <asp:TextBox ID="Email" runat="server" CssClass="form-control" Placeholder="Email" required></asp:TextBox>
               </div>
               <div class="form-row">
-                <asp:TextBox ID="Re_email" runat="server" CssClass="form-control" placeholder="Re-enter email"></asp:TextBox>
+                <asp:TextBox ID="Re_email" runat="server" CssClass="form-control" Placeholder="Re-enter email" ValidationGroup="Email"></asp:TextBox>
               </div>
               <div class="form-row">
-                <asp:TextBox ID="Password" runat="server" CssClass="form-control" placeholder="Password" input="password"></asp:TextBox>
+                <asp:TextBox ID="Password" runat="server" CssClass="form-control" Placeholder="Password" TextMode="Password" required="required"></asp:TextBox>
               </div>
               <div class="form-row">
-                  <asp:TextBox ID="Re_password" runat="server" CssClass="form-control" placeholder="Re-enter password" input="password"></asp:TextBox>
+                  <asp:TextBox ID="Re_password" runat="server" CssClass="form-control" Placeholder="Re-enter password" TextMode="Password" required="required"></asp:TextBox>
               </div>
               <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="login_check" />
                 <label class="form-check-label" for="login_check">Recieve our weekly newsletter and other occasional updates</label>
               </div>
-              <asp:Button ID="Signup" runat="server" Text="SIGN UP" CssClass="btn btn-primary" Font-Names="Arial" OnClick="Signup_Click" />
+              <asp:Button ID="Signup" runat="server" Text="SIGN UP" CssClass="btn btn-primary" Font-Names="Arial" OnClick="Signup_Click" input ="submit"/>
               <asp:Button ID="Login" runat="server" Text="LOGIN" CssClass="btn btn-outline-primary" Font-Names="Arial" OnClick="Login_Click" />
+              <asp:Label ID="Label1" runat="server"></asp:Label>
               <p id="privacyTerms" class="small_text">
                 By signing up, you agree to our <a href="#">terms of use</a>, <a href="#">privacy policy</a>, <a
                   href="#">and cookie policy</a>.
@@ -70,7 +71,7 @@
          </div>
          </div>
         </div>
-    </div>
+        </div>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"  crossorigin="anonymous"></script>
