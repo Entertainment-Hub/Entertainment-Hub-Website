@@ -177,3 +177,6 @@ C:\Users\potatoe\Documents\School\College\Year 2019\Spring 2019\Senior Design\En
 C:\Users\potatoe\Documents\School\College\Year 2019\Spring 2019\Senior Design\Entertainment-Hub-Website\EntertainmentHub\obj\Release\EntertainmentHub.csproj.CopyComplete
 C:\Users\potatoe\Documents\School\College\Year 2019\Spring 2019\Senior Design\Entertainment-Hub-Website\EntertainmentHub\obj\Release\EntertainmentHub.dll
 C:\Users\potatoe\Documents\School\College\Year 2019\Spring 2019\Senior Design\Entertainment-Hub-Website\EntertainmentHub\obj\Release\EntertainmentHub.pdb
+C:\Users\potatoe\Documents\School\College\Year 2019\Spring 2019\Senior Design\Entertainment-Hub-Website\EntertainmentHub\bin\nunit.framework.dll
+C:\Users\potatoe\Documents\School\College\Year 2019\Spring 2019\Senior Design\Entertainment-Hub-Website\EntertainmentHub\bin\nunit.framework.pdb
+C:\Users\potatoe\Documents\School\College\Year 2019\Spring 2019\Senior Design\Entertainment-Hub-Website\EntertainmentHub\bin\nunit.framework.xml

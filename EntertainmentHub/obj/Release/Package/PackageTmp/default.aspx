@@ -40,31 +40,22 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="login.aspx">Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="sign_up.aspx">Sign-Up</a>
                     </li>
                     <li class="nav-item">
-                        <div class="container" style="float:right">
-                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                                [Placeholder Username]
-                            </button>
-                            <div class="dropdown-menu" style="position:relative">
-                                <a href="#" class="form-control dropdown-item">Account Settings </a>
-                                <a href="#" class="form-control dropdown-item">Manage Subscriptions </a>
-                                <a href="#" class="form-control dropdown-item">Log Out</a>
-                            </div>
+                    <div class="container" style="float:right">
+                        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                            [Placeholder Username]
+                        </button>
+                        <div class="dropdown-menu" style="position:relative">
+                            <a href="#" class="form-control dropdown-item">Account Settings </a>
+                            <a href="#" class="form-control dropdown-item">Manage Subscriptions </a>
+                            <a href="#" class="form-control dropdown-item">Log Out</a>
                         </div>
+                    </div>
                     </li>
                 </ul>
             </div>
@@ -76,37 +67,39 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3">
-                <div class="container" style="position:fixed;width:20%; top:15%">
-                    <h2> Filter By:</h2>
-                    <div class="row">
-                        <div class="column" style="width:20%">Name </div>
-                        <div class="column" style="width:80%">
-                            <input type="text" name="filter_name_field" class="form-control">
+                <form>
+                    <div class="container" style="position:fixed;width:20%; top:15%">
+                        <h2> Filter By:</h2>
+                        <div class="row">
+                                <div class="column" style="width:20%">Name </div>
+                                <div class="column" style="width:80%">
+                                    <input type="text" name="filter_name_field" class="form-control"/>
+                                </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="column" style="width:20%">Genre </div>
-                        <div class="column" style="width:80%">
-                            <input type="text" name="filter_genre_field" class="form-control">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="dropdown">
-                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" style="width:100%" data-toggle="dropdown">
-                                Streaming Services
-                            </button>
-                            <div class="dropdown-menu">
-                                Netflix <input type="checkbox" name="filter_platform_field" class="form-control dropdown-item">
-                                Hulu <input type="checkbox" name="filter_platform_field" class="form-control dropdown-item">
-                                HBO Go<input type="checkbox" name="filter_platform_field" class="form-control dropdown-item">
-                                Amazon Prime Video <input type="checkbox" name="filter_platform_field" class="form-control dropdown-item">
+                        <div class="row">
+                            <div class="column" style="width:20%">Genre </div>
+                            <div class="column" style="width:80%">
+                                <input type="text" name="filter_genre_field" class="form-control"/>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="dropdown">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" style="width:100%" data-toggle="dropdown">
+                                    Streaming Services
+                                </button>
+                                <div class="dropdown-menu">
+                                    Netflix <input type="checkbox" name="filter_platform_field" class="form-control dropdown-item"/>
+                                    Hulu <input type="checkbox" name="filter_platform_field" class="form-control dropdown-item"/>
+                                    HBO Go<input type="checkbox" name="filter_platform_field" class="form-control dropdown-item"/>
+                                    Amazon Prime Video <input type="checkbox" name="filter_platform_field" class="form-control dropdown-item"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button type="button" name="filter_submit" class="btn btn-dark" style='width:100%' onclick=""> Submit </button>
+                        </div>
                     </div>
-                    <div class="row">
-                        <button type="button" name="filter_submit" class="btn btn-dark" style='width:100%'> Submit </button>
-                    </div>
-                </div>
+                </form>
             </div>
             <!-- Filter By Section -->
 
@@ -115,49 +108,27 @@
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
                             <a href="#">
-                                <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="First slide">
+                                <img class="d-block img-fluid" src="/images/Untitled-1.png" alt="First slide">
                             </a>
-                            <p class="carousel-desc" id="carousel-desc1">
-                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                                Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-                                amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit
-                                amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare
-                                sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus
-                                lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus,
-                                tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt
-                                quis, accumsan porttitor, facilisis luctus, metus
-                            </p>
-
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#">
-                                <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Second slide">
-                            </a>
-                            <p class="carousel-desc" id="carousel-desc1">
-                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                                Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-                                amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit
-                                amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare
-                                sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus
-                                lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus,
-                                tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt
-                                quis, accumsan porttitor, facilisis luctus, metus
+                            <p id="carousel-dec1" class="carousel-desc">
+                                Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss for HBO. It is an adaptation of A Song of Ice and Fire, George R. R. Martin's series of fantasy novels, the first of which is A Game of Thrones. The show is filmed in Belfast and elsewhere in Northern Ireland, Canada, Croatia, Iceland, Malta, Morocco, Scotland, Spain, and the United States. The series premiered on HBO in the United States on April 17, 2011, and will conclude with its eighth season, which premiered on April 14, 2019.
                             </p>
                         </div>
                         <div class="carousel-item">
                             <a href="#">
-                                <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide">
+                                <img class="d-block img-fluid" src="/images/netflix1.png" alt="Second slide">
                             </a>
-                            <p class="carousel-desc" id="carousel-desc1">
-                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                                Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-                                amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit
-                                amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare
-                                sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus
-                                lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus,
-                                tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt
-                                quis, accumsan porttitor, facilisis luctus, metus
-                            </p>
+                            <p id="carousel-dec2" class="carousel-desc">
+                               The Office is an American television sitcom that aired on NBC from March 24, 2005, to May 16, 2013, lasting nine seasons. It is an adaptation of the original BBC series of the same name and was adapted for American television by Greg Daniels, a veteran writer for Saturday Night Live, King of the Hill, and The Simpsons. It was co-produced by Daniels' Deedle-Dee Productions, and Reveille Productions (later Shine America), in association with Universal Television. The original executive producers were Greg Daniels, Howard Klein, Ben Silverman, Ricky Gervais, and Stephen Merchant, with numerous others being promoted in later seasons. 
+                                </p>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#">
+                                <img class="d-block img-fluid" src="/images/hulu1.png" alt="Third slide">
+                                <p "carousel-dec3" class="carousel-desc">
+                                    Brooklyn Nine-Nine is an American police live-action sitcom created by Dan Goor and Michael Schur for the Fox Broadcasting Company. The series revolves around Jake Peralta (Andy Samberg), an immature-but-talented NYPD detective in Brooklyn's 99th Precinct, who comes into conflict with his new commanding officer, the serious and stern Captain Raymond Holt (Andre Braugher). The ensemble and supporting cast feature Stephanie Beatriz as Rosa Diaz, Terry Crews as Terry Jeffords, Melissa Fumero as Amy Santiago, Joe Lo Truglio as Charles Boyle, Chelsea Peretti as Gina Linetti, Dirk Blocker as Michael Hitchcock, and Joel McKinnon Miller as Norm Scully.
+                                </p>
+                            </a>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -172,30 +143,27 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="/images/hbo2.png" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="#">Item One</a>
                                 </h4>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="/images/hulu2.png" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="#">Item Two</a>
                                 </h4>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="/images/hbo3.png" alt=""></a>
                             <div class="card-body">
-                                <h4 class="card-title">
-                                    <a href="#">Item Three</a>
+                                <h4 class="card-title">     
                                 </h4>
                             </div>
                         </div>
@@ -204,30 +172,27 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="/images/netflix2.png" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="#">Item Four</a>
                                 </h4>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="/images/netflix3.png" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="#">Item Five</a>
                                 </h4>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="/images/hulu3.png" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="#">Item Six</a>
                                 </h4>
                             </div>
                         </div>
